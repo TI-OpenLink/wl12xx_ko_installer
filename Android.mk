@@ -1,0 +1,42 @@
+local_target_dir := $(TARGET_OUT)/lib/modules
+LOCAL_PATH:= $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := compat.ko
+LOCAL_MODULE_TAGS := debug
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := ETC
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := mac80211.ko
+LOCAL_MODULE_TAGS := debug
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := ETC
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := cfg80211.ko
+LOCAL_MODULE_TAGS := debug
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := ETC
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := wl12xx.ko
+LOCAL_MODULE_TAGS := debug
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := ETC
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := wl12xx_sdio.ko
+LOCAL_MODULE_TAGS := debug
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := ETC
+include $(BUILD_PREBUILT)
