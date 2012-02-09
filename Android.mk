@@ -34,9 +34,26 @@ LOCAL_MODULE_CLASS := ETC
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := wl12xx_sdio.ko
+LOCAL_MODULE := wl18xx.ko
 LOCAL_MODULE_TAGS := debug
 LOCAL_MODULE_PATH := $(local_target_dir)
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 LOCAL_MODULE_CLASS := ETC
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := wlcore.ko
+LOCAL_MODULE_TAGS := debug
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := ETC
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := wlcore_sdio.ko
+LOCAL_MODULE_TAGS := debug
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := ETC
+include $(BUILD_PREBUILT)
+
